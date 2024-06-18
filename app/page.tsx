@@ -4,7 +4,7 @@ export default function Home() {
   const items = data.data.orderDetail.items;
   return (
     <>
-      <h1 className="sticky top-0 py-4 container bg-white z-50 border-b">
+      <h1 className="sticky top-0 py-4 container bg-white z-50 border-b font-bold text-xl">
         TotalAmount:{' '}
         {items
           .reduce((total, item) => item.unitPrice * item.count + total, 0)
@@ -32,7 +32,9 @@ const Item = ({
   return (
     <div className="space-y-2">
       <Image src={productImgUrl || ''} alt={productName} />
-      <h5 className="font-bold leading-5 h-10">{productName}</h5>
+      <h5 className="font-bold leading-5 h-10 overflow-hidden">
+        {productName}
+      </h5>
       <div className="font-medium text-neutral-600 flex justify-between">
         <span>{unitPrice.toLocaleString()}₮</span>
         <span>*{count}</span>
