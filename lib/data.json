@@ -2605,7 +2605,7 @@
           "productImgUrl": null,
           "productName": "710004 - Mentos Бохь 12,9гр хар",
           "status": "new",
-          "unitPrice": 11570
+          "unitPrice": 1000
         },
         {
           "__typename": "PosOrderItem",
